@@ -1,3 +1,3 @@
-module github.com/MajorShebka/go-di-container
+module github.com/MajorShebka/di-container
 
 go 1.24
