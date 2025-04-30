@@ -9,7 +9,13 @@ type DefaultBeanDispatchService struct {
 }
 
 func (service DefaultBeanDispatchService) Dispatch(tag string, nameToBean map[string]interface{}, t reflect.Type, kind reflect.Kind) model.Bean {
-	return model.Bean{nameToBean[tag+kind.String()], nil, t}
+	beanName := tag
+	if kind == reflect.Interface {
+		beanName += "struct"
+	} else {
+		beanName += kind.String()
+	}
+	return model.Bean{nameToBean[beanName], nil, t}
 }
 
 func (service DefaultBeanDispatchService) GetType() string {
