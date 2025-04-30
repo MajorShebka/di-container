@@ -1,8 +1,8 @@
 package pkg
 
 import (
-	"DI-container/internal/service"
-	"DI-container/internal/util"
+	"github.com/MajorShebka/go-di-container/internal/service"
+	"github.com/MajorShebka/go-di-container/internal/util"
 	"reflect"
 )
 

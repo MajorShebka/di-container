@@ -1,8 +1,8 @@
 package main
 
 import (
-	"DI-container/pkg"
 	"fmt"
+	"github.com/MajorShebka/go-di-container/pkg"
 )
 
 type I interface {

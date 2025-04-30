@@ -1,7 +1,7 @@
 package service
 
 import (
-	"DI-container/internal/util"
+	"github.com/MajorShebka/go-di-container/internal/util"
 	"reflect"
 	"strings"
 )
